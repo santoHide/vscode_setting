@@ -1,67 +1,11 @@
-//参考:https://blog.aiandrox.com/posts/tech/2021/04/09/
-//https://www.cview.co.jp/osakatech/2021.04.20.dYMmFSxAihNBwoEkCys_X
-//各言語で設定を変えたい場合は以下
-/*
 {
-    "[言語名]": {
-        // 各種設定項目...
-    }
-}
-*/
-
-{
-    "python.pythonPath": "/Users/itahashihideaki/.pyenv/versions/pypy3.6-7.3.0/bin/python",
-
-    /*一般的な設定*/
-
-    /*アイコンの設定:material-icon-theme*/
-    "workbench.iconTheme": "material-icon-theme",
-    /*fontsize*/
-    "editor.fontSize": 12,
-    /*エディタの縦ラインを80文字と100文字に設定(コードの長すぎ防止)*/
-    "editor.rulers": [
-        100
-    ],
-    /*タブのサイズ(2文字)*/
-    "editor.tabSize": 2,
-
-    /*空白文字の見やすさ設定*/
-    /*https://qiita.com/satokaz/items/cb45d82f6f8f1e24c0d6*/
-    "editor.renderWhitespace": "all",
-    /*markdown関連:?を見えるようにする*/
-    "editor.renderControlCharacters": true,
-
-    /*入力補完のサジェスト設定*/
-    "editor.acceptSuggestionOnEnter": "on",
-
-    /*ペースト時にフォーマッタを自動設定*/
-    /*ようわからんのでfalse*/
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
-
-    /*行の折りたたみ記号の表示方法*/
-    "editor.showFoldingControls":"always",
-
-    /*行の折り返し表示を指定*/
-    "editor.wordWrap":"on",
-
-    /*ミニマップ（画像右側）の表示の設定*/
-    "editor.minimap.enabled": false,
-
-    /*保存時に、ファイルの最後に空行を入れる*/
-    /*使い所わからんのでfalse*/
-    "files.insertFinalNewline": false,
-    /*保存時に、ファイルの最後に不要な空行があったら自動で削除*/
-    /*一応true*/
-    "files.trimFinalNewlines": true,
-    /*保存時に、行の最後に空白文字があったら自動で削除*/
-    /*これは嬉しいのでtrue*/
-    "files.trimTrailingWhitespace": true,
-
-    /*画面全体のズームレベル*/
-    "window.zoomLevel": 0,
-
-    /*ターミナルの最大行バッファの設定*/
-    /*そんなに使わんから5000に設定*/
-    "terminal.integrated.scrollback": 10000,
+    "extensions.ignoreRecommendations": false,
+    // TSファイルにのみ適用する設定
+    // ファイル保存時のフォーマットを設定
+    "editor.formatOnSave": true,
+    // フォーマッタを指定
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "window.menuBarVisibility": "toggle",
+    "prettier.configPath": "/Users/h.itabashi/.vscode/vscode_settings/.prettierrc",
+    "prettier.tabWidth": 4
 }
